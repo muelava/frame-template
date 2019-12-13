@@ -1,0 +1,76 @@
+<HTML>
+<HEAD>
+<TITLE> Halaman Galery </TITLE>
+
+<style type="text/css">
+
+	body{
+		background-image: url(Multimedia/background-1.jpg);
+	}
+	
+	img{
+		width: 250;
+		height:200;
+		border: 3px solid #ffffff;
+	}
+
+	.img{
+		background-color: lightblue;
+		border-radius: 40px 0px 40px 0px;
+		padding:5px;
+		width: 200px;
+		display: inline-block;
+		text-align: center;
+		float: left;
+		box-shadow: 3px 5px 7px black;
+		cursor: pointer;
+	}
+
+	.head{
+		background-color: lightblue;
+		border-radius: 40px 0px 40px 0px;
+		padding:5px;
+		width: 200px;
+		display: inline-block;
+		text-align: center;
+		margin-top:5px;
+		box-shadow: 3px 5px 7px black;
+		cursor: pointer;
+	}
+
+
+</style>
+
+</head>
+<body>
+
+	<h1>Welcome My Gallery</h1>
+
+	<h1 class="img">IMAGE</h1><br>
+<div style="float:left; clear: both; margin-right: 15px; ">
+	<img src="Multimedia/background-1.jpg" title="background-1">
+	<img src="Multimedia/background-2.png" title="background-2"><br>
+	<img src="Multimedia/background-3.jpg" title="background-3">
+	<img src="Multimedia/background-4.jpg" title="background-4"><br></div>
+
+
+	<h1 class="head">VIDEO</h1>
+
+	<div>
+		<video style="border: 3px solid #ffffff; cursor: pointer;" width="550px" height="407px" title="sumber : https://sekolahkoding.com"  controls >
+			<source src="Multimedia/SEO-2.mp4" type="video/mp4">
+		</video>
+	</div>
+
+	<br>
+
+	<h1 class="head" style="clear: both; float: left;">MUSIC</h1>
+
+	<audio controls style=" clear: both; display: block;">
+		<source src="Multimedia\Background-music.mp3" type="audio/mp3">
+	</audio>
+
+
+
+</body>
+</HTML>

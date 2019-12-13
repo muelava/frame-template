@@ -1,0 +1,105 @@
+<HTML>
+<HEAD>
+<TITLE> Halaman Tamu </TITLE>
+</HEAD>
+
+<style type="text/css">
+
+	body{
+		background-image: url(Multimedia/background-4.jpg);
+		background-attachment: fixed;
+		background-size: cover;
+		color: white;
+	}
+
+	h1{
+		font-family:verdana;
+		text-align: center;
+		margin-bottom:50px;
+	}
+
+	form{
+		margin-left: 15%;
+		margin-bottom: 35px;
+	}
+
+		.margin{
+		position: absolute;
+		left: 30%;
+	}
+
+
+
+</style>
+
+<BODY>
+	<h1> Formulir</h1>
+
+	<form>
+		Nama Depan : <input class="margin" type="text" name="nama_depan"><br>
+		<br>
+		Nama Tengah : <input class="margin" type="text" name="nama_tengah"><br>
+		<br>
+		Nama Belakang : <input class="margin" type="" name=""><br>
+		<br>
+		Tempat Lahir : <input class="margin" type="text" name="tempat_lahir"><br>
+		<br>
+		Tanggal Lahir : <input class="margin" type="date" name="tanggal_lahir"><br>
+		<br>
+		Pendidikan : <select class="margin" name="pendidikan">
+			<option selected>..</option>
+			<option>SD</option>
+			<option>SMP</option>
+			<option>SMA/SMK</option>
+			<option>S1</option>
+			<option>S2</option>
+			<option>S3</option>
+			
+		</select><br>
+		<br>
+		Usia (max 50): <input style="margin-left: 66px" type="number" name="usia" min="0" max="50">Tahun<br>
+		<br>
+		Jenis Kelamin : <input style="margin-left: 8.5%" type="radio" name="gender">Pria
+		<input style="margin-left: 2%" type="radio" name="gender">Wanita<br>
+		<br>
+		Unggah Foto :
+		<input class="margin" type="file" name="foto"><br>
+		<br>
+		Email : <input class="margin" type="email" name="email" placeholder="contoh@gmail.com"><br>
+		<br>
+		Hobby : <input style="margin-left: 14%" type="checkbox" name="hobby" value="olahraga"> Olahraga
+				<input type="checkbox" name="hobby" value="music"> Music
+				<input type="checkbox" name="hobby" value="adventure"> Adventure<br>
+		<br>
+		Alamat : <br> <textarea style="margin-left: 165px;" name="alamat" rows="5px" cols="35px"></textarea><br>
+		<br>
+		Warna Favorit :
+		<input class="margin" type="color" name="color"><br>
+		<br>
+
+		<br><br><br>
+		<input class="margin" type="reset" name="reset">
+
+
+
+
+		<input onclick="pilihan()" class="margin" style="margin-left: 10%" type="submit" value="Simpan">
+
+		<script type="text/javascript">
+			function pilihan() {
+				y = confirm("Apakah Ingin di Simpan ?");
+				if (y==true) {
+					alert("Berhasil Tersimpan");
+
+				}
+				else {
+					close();
+				}
+			}
+		</script>
+
+	</form>
+
+
+</BODY>
+</HTML>
